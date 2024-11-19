@@ -42,7 +42,7 @@
                 <?php
                 include "conf/conn.php";
                 $no = 0;
-                $query = mysqli_query($koneksi, "SELECT * FROM buku ORDER BY id_buku DESC")
+                $query = mysqli_query($koneksi, "call tampil_buku;")
                   or die(mysqli_error($koneksi));
                 while ($row = mysqli_fetch_array($query)) {
                 ?>
